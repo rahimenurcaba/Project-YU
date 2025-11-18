@@ -1,3 +1,2 @@
 # Project-YU
-
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/rahimenurcaba/week1)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/rahimenurcaba/week-1)
