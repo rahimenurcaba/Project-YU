@@ -1,1 +1,32 @@
+{
+    "tables":[
+     {
+        "table_number": "T1",
+        "table_capacity": "2",
+        "table_availability": "free",
+        "server_name": "Ayşe"
+     },
 
+     {
+        "table_number":"T2",
+        "table_capacity":"4",
+        "table_availability":"free",
+        "server_name": "Beren Begüm"
+     },
+
+     {
+        "table_number": "T3",
+        "table_capacity":"6",
+        "table_availability": "occupied",
+        "server_name": "Kaya"
+     },
+
+     {
+        "table_number":"T4",
+        "table_capacity": "8",
+        "table_availability": "free",
+        "server_name": "Mustafa"
+     }
+    ]
+
+}
