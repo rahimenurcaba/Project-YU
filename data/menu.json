@@ -1,1 +1,43 @@
+{
+  "starters": [
+    {
+        "id": "S1", 
+        "name": "Spring Rolls", 
+        "price": 8.99, 
+        "available": true},
 
+    {
+        "id": "S2", 
+        "name": "Garlic Bread", 
+        "price": 5.99, 
+        "available": true}
+  ],
+
+  "mains": [
+    {
+        "id": "M1", 
+        "name": "Steak Frites", 
+        "price": 24.99, 
+        "available": true},
+
+    {
+        "id": "M2", 
+        "name": "Veggie Burger", 
+        "price": 15.99, 
+        "available": true}
+  ],
+
+  "desserts": [
+    {
+        "id": "D1", 
+        "name": "Lava Cake", 
+        "price": 9.99, 
+        "available": false},
+    {
+        "id:": "D2",
+        "name": "Red Velvet Cake",
+        "price": 10.99,
+        "available": true}
+    
+  ]
+}
