@@ -48,19 +48,25 @@ def backup_day(data_dir: str, archive_dir: str) -> str:
     if not os.path.exists(archive_dir):
         os.makedirs(archive_dir)
         
-    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    timestamp= datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
     backup_path = f"{archive_dir}/backup_{timestamp}"
-    shutil.copytree(data_dir, backup_path)
+    shutil.copytree(data_dir, backup_path) 
+    
     return backup_path
 
 def log_kitchen_ticket(order: dict, directory: str) -> str:
     if not os.path.exists(directory):
         os.makedirs(directory)
-        
-    filename = f"{directory}/ticket_{order['table_number']}.txt"
+  
+    timestamp = datetime.datetime.now().strftime("%H%M%S")
+    filename = f"{directory}/ticket_{order['table_number']}_{timestamp}.txt" 
+    
     with open(filename, 'w') as f:
+        f.write("--- KITCHEN TICKET ---\n") 
         f.write(f"Table: {order['table_number']}\n")
+        f.write(f"Time: {datetime.datetime.now().strftime('%H:%M:%S')}\n")
+        f.write("-" * 25 + "\n")
+        
         for item in order['items']:
             f.write(f"- {item['quantity']}x {item['name']} ({item.get('note', '')})\n")
-            
-    return filename
+        
